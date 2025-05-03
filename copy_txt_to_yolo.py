@@ -39,8 +39,18 @@ def json_to_yolo(json_path, output_path):
 
     # 저장
     base_name = os.path.splitext(os.path.basename(json_path))[0]
-    with open(os.path.join(output_path, base_name + '.txt'), 'w') as f:
+    output_file = os.path.join(output_path, base_name + '.txt')
+    with open(output_file, 'w') as f:
         f.write('\n'.join(result_lines))
 
-# 사용 예시
-json_to_yolo('example.json', 'yolo_labels')
+# 전체 폴더 처리
+input_dir = '/mnt/d/Users/Brian/Downloads/YOLO_dataset/labels/train'
+output_dir = '/mnt/d/Users/Brian/Downloads/YOLO_dataset/labels/train_txt'
+
+
+os.makedirs(output_dir, exist_ok=True)
+
+for filename in os.listdir(input_dir):
+    if filename.endswith('.json'):
+        json_path = os.path.join(input_dir, filename)
+        json_to_yolo(json_path, output_dir)
