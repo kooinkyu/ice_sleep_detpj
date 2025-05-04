@@ -45,7 +45,7 @@ def json_to_yolo(json_path, output_path):
 
 # 전체 폴더 처리
 input_dir = '/mnt/d/Users/Brian/Downloads/YOLO_dataset/labels/train'
-output_dir = '/mnt/d/Users/Brian/Downloads/YOLO_dataset/labels/train_txt'
+output_dir = '/mnt/d/Users/Brian/Downloads/YOLO_dataset/labels/train'
 
 
 os.makedirs(output_dir, exist_ok=True)

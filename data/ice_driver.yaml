@@ -1,5 +1,5 @@
-train: /mnt/d/Users/brian/Downloads/YOLO_dataset/images/train
-val: /mnt/d/Users/brian/Downloads/YOLO_dataset/images/val  # 따로 없으면 train 재사용
+train: /home/jovyan/ice_sleep_detpj/data/YOLO_dataset/images/train
+val: /home/jovyan/ice_sleep_detpj/data/YOLO_dataset/images/val # 따로 없으면 train 재사용
 
 nc: 6  # 클래스 수
 names: ['Leye_Open', 'Leye_Closed', 'Reye_Open', 'Reye_Closed', 'Mouth_Open', 'Mouth_Closed']
