@@ -279,4 +279,5 @@ runs/
 logs/
 
 !runs/train/ice_eye_mouth20/weights/best.pt
+!model_backups/*.h5
 
