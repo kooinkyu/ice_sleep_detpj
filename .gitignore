@@ -272,11 +272,11 @@ __pycache__/
 .env
 
 # 모델 및 weight
-*.h5
-*.pt
-*.pkl
 *.joblib
 
 # 로그, 실험 결과
 runs/
 logs/
+
+!runs/train/ice_eye_mouth20/weights/best.pt
+
