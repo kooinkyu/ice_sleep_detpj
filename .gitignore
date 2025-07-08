@@ -256,3 +256,27 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
+
+
+# Jupyter 체크포인트
+.ipynb_checkpoints/
+
+# Python 컴파일
+__pycache__/
+*.py[cod]
+
+# 시스템 파일
+.DS_Store
+
+# 환경 파일
+.env
+
+# 모델 및 weight
+*.h5
+*.pt
+*.pkl
+*.joblib
+
+# 로그, 실험 결과
+runs/
+logs/
