@@ -1,0 +1,23 @@
+[RESULT] Classification report
+              precision    recall  f1-score   support
+
+  eye_closed     0.7072    0.9737    0.8193      1863
+    eye_open     0.9953    0.9577    0.9761     15868
+mouth_closed     0.9769    0.9800    0.9784      7884
+  mouth_open     0.8626    0.7505    0.8026       970
+
+    accuracy                         0.9578     26585
+   macro avg     0.8855    0.9155    0.8941     26585
+weighted avg     0.9648    0.9578    0.9595     26585
+
+Confusion matrix:
+[[ 1814    49     0     0]
+ [  672 15196     0     0]
+ [   34     8  7726   116]
+ [   45    14   183   728]]
+
+Normalized confusion matrix (row-wise):
+[[0.9737 0.0263 0.     0.    ]
+ [0.0423 0.9577 0.     0.    ]
+ [0.0043 0.001  0.98   0.0147]
+ [0.0464 0.0144 0.1887 0.7505]]
